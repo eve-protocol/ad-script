@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # We intialize vars
-domain="$1"
-username="$2"
-password="$3"
-computer_name="$4"
-domain_ip_address="$6"
-domain_controller="$7"
-sudoers=("${!5}")
+domain="$1"; shift
+username="$1"; shift
+password="$1"; shift
+computer_name="$1"; shift
+domain_ip_address="$1"; shift
+domain_controller="$1"; shift
+sudoers=("$@")
 
 # we install the necessary packages
 sudo apt update -y

@@ -34,7 +34,7 @@ EOF
 sudo chmod 644 /etc/krb5.conf
 
 # we set the hostname
-hostnamectl set-hostname $computer_name.$domain
+hostnamectl set-hostname $computer_name
 
 # we join the domain
 sudo adcli join --domain=$(echo $domain | tr '[:upper:]' '[:lower:]') --domain-controller=$domain_controller --login-user=$username --show-details --stdin-password <<EOF
@@ -66,7 +66,7 @@ ldap_id_mapping = True
 access_provider = ad
 ad_gpo_access_control = disabled
 dyndns_update = True
-ad_hostname = $computer_name.$domain
+ad_hostname = $computer_name
 EOF
 
 #  we set the permissions of sssd.conf

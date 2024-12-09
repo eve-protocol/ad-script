@@ -1,4 +1,3 @@
-# we need 3 parameters: domain, username, password, computer_name, sudoers, domain_ip_address, domain_controller
 # We intialize vars
 domain="$1"
 username="$2"

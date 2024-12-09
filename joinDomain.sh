@@ -83,5 +83,5 @@ rm /etc/sudoers.d/shift_sudoers
 sudo touch /etc/sudoers.d/shift_sudoers
 for i in "${sudoers[@]}";
 do
-    sudo echo "%$i ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers.d/shift_sudoers
+    sudo echo "%$i ALL=(ALL) ALL" | sudo tee -a /etc/sudoers.d/shift_sudoers
 done

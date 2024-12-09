@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # We intialize vars
 domain="$1"
 username="$2"

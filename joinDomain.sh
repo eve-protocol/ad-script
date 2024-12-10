@@ -67,9 +67,6 @@ access_provider = ad
 ad_gpo_access_control = disabled
 dyndns_update = True
 ad_hostname = $computer_name
-
-[pam]
-pam_passkey_auth = False
 EOF
 
 #  we set the permissions of sssd.conf
